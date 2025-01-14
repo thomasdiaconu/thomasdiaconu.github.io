@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "diaconu-frontend": {
+    "diaconu.github.io": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/diaconu-frontend",
+            "baseHref": "/thomasdiaconu.github.io/",
+            "outputPath": "dist/diaconu.github.io",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "diaconu-frontend:build:production"
+              "buildTarget": "diaconu.github.io:build:production"
             },
             "development": {
-              "buildTarget": "diaconu-frontend:build:development"
+              "buildTarget": "diaconu.github.io:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -102,6 +103,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
