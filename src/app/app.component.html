@@ -1,8 +1,16 @@
 <div class="app-container">
-  <!-- <app-header></app-header> -->
-<div class="main-content">
-  <app-nav></app-nav>
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
-</div>
+
+  <!-- Main Content -->
+  <div class="main-content d-flex flex-column">
+    <!-- Sidebar or Navigation -->
+    <app-nav></app-nav>
+
+    <!-- Scrollable Content Area -->
+    <div class="content-wrapper flex-grow-1 overflow-auto">
+      <router-outlet></router-outlet>
+    </div>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+  </div>
 </div>

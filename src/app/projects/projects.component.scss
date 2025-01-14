@@ -1,4 +1,9 @@
 .card {
-    height: 450px;
-    position: inherit;
+    height: 350px;
+    position: relative;
+}
+
+.viewButton {
+    position: absolute;
+    bottom: 0;
 }

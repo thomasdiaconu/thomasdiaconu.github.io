@@ -11,8 +11,8 @@ export class FooterComponent {
 
   year: number = new Date().getFullYear();
   socialLinks = {
-    github: 'https://github.com/yourgithub',
-    linkedin: 'https://linkedin.com/in/yourlinkedin',
+    github: 'https://github.com/thomasdiaconu',
+    linkedin: 'https://www.linkedin.com/in/thomas-diaconu/',
     twitter: 'https://twitter.com/yourtwitter',
   };
   
