@@ -1,0 +1,22 @@
+<div class="container my-5">
+    <div class="row justify-content-center align-items-center">
+      <!-- Sidebar Block -->
+      <div class="col-md-4" id="sidebar">
+        <img
+          src="assets/images/profile.jpg"
+          class="rounded-circle mb-3 img-fluid"
+        />
+        <div>
+            <i class="fa-solid fa-map-pin"></i> Paris
+        </div>
+      </div>
+  
+      <!-- Introduction Block -->
+      <div class="col-md-8">
+        <h2 class="fw-bold">{{ introduction.title }}</h2>
+        <p class="lead" [innerHTML]="introduction.description">
+        </p>
+      </div>
+    </div>
+  </div>
+  
