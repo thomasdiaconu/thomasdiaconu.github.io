@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CONFIG } from '../config';
+import { LanguageService } from '../services/language.service';
+import { TranslationService } from '../services/translation.service';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +12,10 @@ import { CONFIG } from '../config';
 })
 export class HomeComponent {
 
-  sidebar = CONFIG.sidebar;
-  introduction = CONFIG.introduction;
+  sidebar: any;
+  introduction: any;
+
+  constructor(public translationService: TranslationService) {
+  }
 
 }

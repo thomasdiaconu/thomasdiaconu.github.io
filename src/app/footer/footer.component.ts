@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslationService } from '../services/translation.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
+
+  constructor(public translationService: TranslationService) {
+    
+  }
 
   year: number = new Date().getFullYear();
   socialLinks = {

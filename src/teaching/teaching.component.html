@@ -2,30 +2,17 @@
     <div class="container">
         <!-- Page Header -->
         <div class="text-center mb-4">
-            <h1 class="h2">Courses & Tutoring</h1>
+            <h1 class="h2">{{this.translationService.translate("TEACHING_TITLE")}}</h1>
             <p class="text-muted">
-                Personalized teaching in Mathematics and Computer Science, tailored to all levels. 
-                Unlock your potential with expert guidance.
+                {{this.translationService.translate("TEACHING_DESC")}}
             </p>
         </div>
 
         <!-- Mathematics Section -->
         <div class="row align-items-center mb-5">
             <div class="col-md-6">
-                <h2 class="h4 text-primary">Mathematics Tutoring</h2>
-                <p>
-                    Whether you are in high school, preparing for competitive exams, or studying in an engineering school,
-                    I offer comprehensive tutoring in Mathematics to strengthen your foundations and excel in exams.
-                </p>
-                <ul>
-                    <li>High school (algebra, geometry, calculus)</li>
-                    <li>University-level courses (linear algebra, differential equations)</li>
-                    <li>Competitive exams (prépa, école d’ingénieur)</li>
-                </ul>
-                <p class="mt-3">
-                    <strong>Key Benefits:</strong>
-                    <br> - Deep understanding of concepts <br> - Problem-solving strategies <br> - Personalized pace and approach
-                </p>
+                <h2 class="h4 text-primary">{{this.translationService.translate('MATH_TUTORING')}}</h2>
+                <div [innerHTML]="this.translationService.translate('MATH_TUTORING_DESC')"></div>
             </div>
             <div class="col-md-6 text-center">
                 <img src="https://static.vecteezy.com/system/resources/previews/021/692/542/original/math-formulas-mathematical-formulas-on-green-school-chalkboard-handwritten-scientific-math-equations-theories-or-calculations-background-vector.jpg" alt="Mathematics Tutoring" class="img-fluid rounded shadow">
@@ -35,21 +22,8 @@
         <!-- Computer Science Section -->
         <div class="row align-items-center mb-5">
             <div class="col-md-6 order-md-2">
-                <h2 class="h4 text-primary">Computer Science Tutoring</h2>
-                <p>
-                    From programming basics to advanced algorithms, I provide expert guidance in Computer Science 
-                    tailored to your goals and experience level.
-                </p>
-                <ul>
-                    <li>Programming Languages (Python, Java, etc.)</li>
-                    <li>Algorithms and Data Structures</li>
-                    <li>Web Development (HTML/CSS, Angular)</li>
-                    <li>AI and Machine Learning Basics</li>
-                </ul>
-                <p class="mt-3">
-                    <strong>Key Benefits:</strong>
-                    <br> - Practical, hands-on learning <br> - Real-world problem-solving <br> - Guidance for projects and assignments
-                </p>
+                <h2 class="h4 text-primary">{{this.translationService.translate("CS_TUTORING")}}</h2>
+                <div [innerHTML]="this.translationService.translate('CS_TUTORING_DESC')"></div>
             </div>
             <div class="col-md-6 text-center">
                 <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/05/the-matrix-digital-rain-opening-credits-1.jpeg" alt="Computer Science Tutoring" class="img-fluid rounded shadow">
@@ -58,9 +32,9 @@
 
         <!-- Call to Action -->
         <div class="text-center">
-            <h3 class="h5">Ready to Get Started?</h3>
-            <p>Contact me today to schedule a session or learn more about my teaching approach.</p>
-            <a href="mailto:your.email@example.com" class="btn btn-primary">Contact Me</a>
+            <h3 class="h5">{{this.translationService.translate("READY")}}</h3>
+            <p>{{this.translationService.translate("SCHEDULE")}}</p>
+            <a href="mailto:thomas.diaconu94@gmail.com" class="btn btn-primary">Contact</a>
         </div>
     </div>
 </section>

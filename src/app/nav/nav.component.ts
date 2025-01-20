@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CONFIG, CONFIG_EN, CONFIG_FR } from '../config';
+import { LanguageService } from '../services/language.service';
+import { TranslationService } from '../services/translation.service';
 
 @Component({
   selector: 'app-nav',
@@ -11,7 +14,9 @@ import { Router } from '@angular/router';
 export class NavComponent {
 
 
-  constructor(private router: Router) {
+  constructor(private router: Router, 
+              private languageService: LanguageService,
+              public translationService: TranslationService) {
 
   }
 
@@ -27,6 +32,14 @@ export class NavComponent {
 
   goMenu() {
     this.router.navigateByUrl("");
+  }
+
+  changeLanguage(language: string): void {
+    this.translationService.setLanguage(language);
+  }
+
+  navigate(submenu: string) {
+    this.router.navigate([submenu]);
   }
 
 }

@@ -1,78 +1,27 @@
 <div class="container my-5">
     <!-- Header -->
     <div class="text-center mb-4">
-      <h1 class="display-4">Resume</h1>
-      <p class="text-muted">A brief overview of my professional journey, education, and skills.</p>
+      <h1 class="display-4">{{ this.translationService.translate("RESUME")}}</h1>
+      <p class="text-muted">
+        <span>{{ this.translationService.translate("RESUME_DESC")}}</span>
+        <a href="assets/docs/resume.pdf" class="btn btn-link text-primary" download>
+          <i class="fas fa-download fa"></i>
+      </a>
+      </p>
     </div>
-
-    <section class="my-5">
-        <div class="container">
-            <!-- Resume Content -->
-            <div class="row">
-                <div class="col-md-12 mb-4 text-center">
-                    <!-- <h3 class="h5">Download my Resume</h3> -->
-                    <!-- Button for Downloading PDF (with icon only) -->
-                    <a href="assets/docs/resume.pdf" class="btn btn-link text-primary" download>
-                        <i class="fas fa-download fa-2x"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
   
     <!-- Experience Section -->
     <section class="mb-5">
-        <h2 class="h4">Professional Experience</h2>
+        <h2 class="h4">{{ this.translationService.translate("PROFESSIONAL_EXP")}}</h2>
+
+
         <div class="border-top pt-3">
-          <div class="mb-4">
-            <h3 class="h5">Software Engineer - AWS <span><i class="fa-brands fa-aws"></i></span></h3>
-            <p class="text-muted">January 2023 - Present</p>
-            <p>Java, Angular, AI, LLMs, AWS. Involved as a Full Stack Engineer on AWS Mainframe modernization. Mainly focused on whole modernization process to deliver customer with reliable modern code. Implemented AI tools to increase code quality and automate modernization steps.</p>
-            <ul>
-              <li><strong>Software Engineer II</strong> (Oct. 2024 - Present)</li>
-              <li><strong>Software Engineer I</strong> (Jan. 2023 - Sept. 2024)</li>
-            </ul>
-          </div>
-          <div class="mb-4">
-            <h3 class="h5">Sofware Development Engineer - Paprec</h3>
-            <p class="text-muted">September 2021 - December 2022</p>
-            <p>Assisted in building client websites and improving UI/UX for e-commerce platforms.</p>
-            <ul>
-              <li>
-                Led the development of the new internal payroll software using Angular & Go
-              </li>
-              <li>
-                Developed a calculation engine using Python to automate the computations of employees wages
-              </li>
-              <li>
-                Built a tool for image annotation & waste prediction (Angular & Python Flask)
-              </li>
-              <li>
-                Leveraged Docker server-side to containerize Frontend and Backend to allow for easy deployment and scalability
-              </li>
-            </ul>
-          </div>
-          <div class="mb-4">
-            <h3 class="h5">R&D Engineer Intern - Sopra Banking Software</h3>
-            <p class="text-muted">February - August 2021</p>
-            <p>Worked in the innovation department as part of my master thesis (grade: 17/20).</p>
-          </div>
-          <div class="mb-4">
-            <h3 class="h5">Freelance Software Engineer - Paprec</h3>
-            <p class="text-muted">2019 & 2020</p>
-            <p>Worked as a freelance software developer in parallel with my studies.</p>
-            <ul>
-              <li>
-                Involved as the main frontend developer of two web applications in production using Angular
-              </li>
-              <li>
-                Created and led projects presentations to the General Management
-              </li>
-            </ul>
-          </div>
-          <div class="mb-4">
-            <h3 class="h5">Artificial Intelligence 1-month discovery Intern - Microsoft  <span><i class="fa-brands fa-microsoft"></i></span></h3>
-            <p class="text-muted">February - March 2019</p>
+
+          <!-- IMPLEMENT NG FOR LOOP ON EXPERIENCES -->
+          <div class="mb-4" *ngFor="let exp of this.translationService.experiences">
+            <h3 class="h5">{{ exp.jobTitle }}, {{ exp.company }} <span *ngIf="exp.companyLogo"><i class={{exp.companyLogo}}></i></span></h3>
+            <p class="text-muted">{{ exp.date }}</p>
+            <div [innerHTML]="exp.description"></div>
           </div>
         </div>
       </section>
@@ -80,23 +29,14 @@
   
     <!-- Education Section -->
     <section class="mb-5">
-      <h2 class="h4">Education</h2>
+      <h2 class="h4">{{ this.translationService.translate("EDUCATION") }} </h2>
       <div class="border-top pt-3">
-        <div class="mb-4">
-          <h3 class="h5">Data Science and Engineering</h3>
-          <p class="text-muted">EURECOM, 2019 - 2021</p>
-          <p>Machine Learning, Deep Learning, Software Development, Mathematics.</p>
+        
+        <div class="mb-4" *ngFor="let ed of this.translationService.education">
+          <h3 class="h5">{{ed.title}}</h3>
+          <p class="text-muted">{{ed.school}}, {{ed.years}}</p>
+          <p>{{ed.description}}</p>
         </div>
-        <div class="mb-4">
-          <h3 class="h5">MSc in Engineering</h3>
-          <p class="text-muted">IMT Atlantique, 2018 - 2021</p>
-          <p>Probabilities/statistics, Graph theory, OOP in Java, SQL, Programming, physics.</p>
-        </div>
-        <div class="mb-4">
-            <h3 class="h5">Preparatory classes for selective schools</h3>
-            <p class="text-muted">Lycee Marcelin Berthelot, 2014 - 2018</p>
-            <p>High level mathematics, physics and computing.</p>
-          </div>
       </div>
     </section>
   

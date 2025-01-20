@@ -1,0 +1,171 @@
+{
+    "HOME": "Accueil",
+    "RESUME": "CV",
+    "SKILLS": "Compétences",
+    "PROJECTS": "Projets",
+    "COURSES": "Cours particuliers",
+    "CONTACT": "Contact",
+    "WELCOME": "Bonjour !",
+    "introduction": "Je suis un ingénieur logiciel basé à Paris. Je travaille actuellement chez AWS, dans le service Blu Age de mainframe modernisation.\n\nAu-delà de l'ingénierie logicielle, j'ai un grand intérêt pour l'intelligence artificielle, et je suis déterminé à explorer davantage ce domaine. Je suis fermement convaincu que l'IA a le potentiel de changer le monde, et je suis enthousiaste à l'idée de contribuer à son développement.\n\nL'enseignement est une autre de mes passions. Que ce soit pour guider des étudiants en mathématiques ou leur enseigner les bases de l'informatique, je trouve une immense satisfaction à partager des connaissances et à inspirer les autres à apprendre.\n\nQuand je ne code pas ou que je n'enseigne pas, vous me trouverez probablement sur un court de tennis, en train de participer à des compétitions de programmation, ou à jouer à des jeux vidéo. Le plus important, c'est que je chéris les moments passés avec ma femme et mes enfants, qui apportent joie et équilibre dans ma vie.",
+    "JOB": "Ingenieur",
+    "KEY_SKILLS": "Compétences clés",
+    "DATA_STRUCTURES": "Structures de données",
+    "ALGORITHMS": "Algorithmes",
+    "MATHS": "Mathématiques",
+    "AI": "IA",
+    "AI_": "Intelligence Artificelle",
+    "OVERVIEW": "Aperçu",
+    "OOP": "Programmation orientée objet",
+    "CONTAINERIZATION": "Conteneurisation",
+    "DEPLOYMENT": "Déploiement",
+    "VC": "Contrôle de version",
+    "PS": "Résolution de problèmes",
+    "OPTIMIZATION": "Optimisation",
+    "ADVANCED_CALC": "Caculs avancés",
+    "ALGEBRA": "Algèbre",
+    "RESPONSIVE": "Design responsive",
+    "BILINGUAL": "Bilingue",
+    "INTERMEDIATE": "Intermédiaire",
+    "FLUENT": "Courant",
+    "NEURAL_NET": "Réseaux de neurones",
+    "FRONTEND_DEV": "Développment frontend moderne",
+    "DATA_HANDLING": "Manipulation de données",
+    "FR": "Français",
+    "EN": "Anglais",
+    "RO": "Roumain",
+    "GER": "Allemand",
+    "CP": "Programmation compétitive",
+    "VG": "Jeux vidéos",
+    "HOBBIES": "Loisirs",
+    "FAMILY": "Famille",
+    "READING": "Lecture",
+    "TECH_ENTHUSIAST": "Veille technologique",
+    "TENNIS_DESC": "Profiter d'une activité physique tout en restant compétitif.",
+    "CP_DESC": "Affiner ses compétences en résolution de problèmes.",
+    "VG_DESC": "Se détendre et explorer des mondes virtuels.",
+    "FAMILY_DESC": "Moments avec femme et enfants.",
+    "READING_DESC": "Élargir ses connaissances et ses perspectives.",
+    "TECH_ENTHUSIAST_DESC": "Rester informé sur les technologies émergentes.",
+    "TEACHING_TITLE": "Cours particuliers",
+    "TEACHING_DESC": "Cours particuliers de mathématiques et d'informatique pour tous niveaux. Accompagnement personnalisé de l'élève afin d'obtenir des résultats immédiats.",
+    "MATH_TUTORING": "Cours de maths",
+    "MATH_TUTORING_DESC": "Que vous soyez au lycée, en préparation aux concours ou en école d’ingénieur, je propose un accompagnement complet en mathématiques pour renforcer vos bases et exceller lors des examens.<br><br><strong>Sujets couverts :</strong><ul><li>Lycée (algèbre, géométrie, calcul)</li><li>Cours universitaires (algèbre linéaire, équations différentielles)</li><li>Concours (prépa, école d’ingénieur)</li></ul><br><strong>Avantages clés :</strong><ul><li>Compréhension approfondie des concepts</li><li>Stratégies de résolution de problèmes</li><li>Approche personnalisée et adaptée à votre rythme</li></ul>",
+    "CS_TUTORING": "Cours d'informatique",
+    "CS_TUTORING_DESC": "Des bases de la programmation aux algorithmes avancés, je propose un accompagnement expert en informatique adapté à vos objectifs et à votre niveau d'expérience.<br><br><strong>Sujets couverts :</strong><ul><li>Langages de programmation (Python, Java, etc.)</li><li>Algorithmes et structures de données</li><li>Développement web (HTML/CSS, Angular)</li><li>Bases de l'IA et du Machine Learning</li></ul><br><strong>Avantages clés :</strong><ul><li>Apprentissage pratique et concret</li><li>Résolution de problèmes réels</li><li>Accompagnement pour projets et devoirs</li></ul>",
+    "READY": "Prêt à démarrer ?",
+    "SCHEDULE": "Contactez moi pour programmer une session ou en apprendre plus.",
+    "GET_IN_TOUCH": "Prenons contact",
+    "GET_IN_TOUCH_DESC": "Si vous avez la moindre question ou vous voulez entrer en collaboration, n'hésitez pas à me contacter.",
+    "SEND_MESSAGE": "Envoyez un message",
+    "FULL_NAME": "Nom complet",
+    "EMAIL": "Adresse mail",
+    "SEND": "Envoyer",
+
+    "PROJECTS_TITLE": "Projets",
+    "projects":
+        [
+            {
+                "name": "Détection et classification des déchets",
+                "description": "Vision par ordinateur, Python, TensorFlow. Détection et classification de divers types de déchets dans le cadre de mon projet de semestre. Note : 20/20. <br><ul><li>Développement d'un morceau de code pour tester un réseau de neurones pré-entraîné (fournis dans les fichiers de points de contrôle), et évaluation de ses performances avec des métriques classiques : précision 0.8, rappel 0.4, score F1 0.5</li><li>Création et nettoyage d'un large jeu de données de ∼ 4k images et implémentation du modèle YOLO (basé sur l'article de recherche officiel)</li></ul>",
+                "github": "",
+                "demo": "",
+                "doc": "assets/docs/report.pdf"
+              },
+              {
+                "name": "Classifieur de textes",
+                "description": "NLP, Python, Scikit-Learn, Jupyter Notebook.<ul><li>Exploration de différentes méthodes de NLP et méthodes de traitements de texte.</li><li>Comparaisons de différents modèles supervisés et sélection du meilleur afin d'obtenir une précision supérieure à 95 %</li></ul>",
+                "github": "https://github.com/thomasdiaconu/NLP_Project_Text_Classifier",
+                "demo": "",
+                "doc": ""
+              },
+              {
+                "name": "Check the place",
+                "description": "Angular, TypeScript, JavaScript, HTML/CSS, Git. <ul><li>Création d'une application web Angular pour les étudiants où ils peuvent partager les lieux qu'ils ont visités</li><li>Conception et implémentation d'environ 10 écrans. Déploiement sur Azure Cloud pour la présentation</li></ul>",
+                "github": "https://github.com/thomasdiaconu/Web_Development_Project",
+                "demo": "",
+                "doc": ""
+              },
+              {
+                "name": "Utilitaire de tags d'images avec VoTT",
+                "description": "Python. Traduction des tags réalisés par VoTT afin d'être utilisé par des réseaux de neurones de deep learning (exemple: YOLO).",
+                "github": "https://github.com/thomasdiaconu/Labelling_images_with_VoTT",
+                "demo": "",
+                "doc": ""
+              },
+              {
+                "name": "Propagation d'ondes mécaniques dans les muscles",
+                "description": "Python, LabView, concepts de physique. <ul><li>Participation au développement d'un logiciel capable d'analyser le signal généré par l'onde</li><li>Mesure de la célérité de l'onde et modélisation physique du bras par une corde de Melde</li></ul>",
+                "github": "",
+                "demo": "",
+                "doc": ""
+              }
+        ],
+      "REPORT": "Rapport",
+
+      "RESUME_DESC": "Un aperçu de mon parcours professionnel, de ma formation et de mes compétences. Téléchargez-le ici.",
+      "PROFESSIONAL_EXP": "Experience professionnelle",
+      "EDUCATION": "Etudes",
+
+      "experiences":
+      [
+          {
+              "jobTitle": "Ingénieur logiciel 2",
+              "company": "AWS",
+              "companyLogo": "fa-brands fa-aws",
+              "date": "Janvier 2023 - Présent",
+              "description": "Java, Angular, AI, LLMs, AWS. Ingénieur logiciel dans le service Blu Age AWS Mainframe modernisation. Processus entier de modernisation afin de délivrer un code maintenable, stable et fiable aux clients.Implémentation d'agents IA afin d'améliorer la qualité du code généré et pour automatiser certaines étapes de modernisation.<ul><li>Ingénieur logiciel II (Oct. 2024 - Present)</li><li>Ingénieur logiciel I (Jan. 2023 - Sept. 2024)</li><ul>"
+          },
+          {
+            "jobTitle": "Ingénieur de développment logiciel",
+            "company": "Paprec",
+            "companyLogo": "",
+            "date": "Septembre 2021 - Décembre 2022",
+            "description": "<ul><li>Dirigé le développement du nouveau logiciel interne de gestion des salaires en utilisant Angular et Go</li><li>Développé un moteur de calcul avec Python pour automatiser les calculs des salaires des employés</li><li>Conçu un outil d'annotation d'images et de prédiction des déchets (Angular & Python Flask)</li><li>Utilisé Docker côté serveur pour conteneuriser le Frontend et le Backend afin de faciliter le déploiement et améliorer la scalabilité</li></ul>"
+          },
+          {
+            "jobTitle": "Stagiaire en R&D",
+            "company": "Sopra Banking Software",
+            "companyLogo": "",
+            "date": "Février - Septembre 2021",
+            "description": "A travaillé au sein du département innovation dans le cadre de mon mémoire de master (note : 17/20).<ul><li>Créé un jeu de données et implémenté plusieurs modèles d’apprentissage automatique pour le conseil en investissement et le profilage</li><li>Développé, étendu et optimisé des endpoints d’API REST pour une banque en ligne</li><li>Mis en place un proxy inverse HTTPS dans un environnement Linux conteneurisé avec NGINX, Docker et AWS</li></ul>"
+          },
+          {
+            "jobTitle": "Freelance",
+            "company": "Paprec",
+            "companyLogo": "",
+            "date": "2020 & 2021",
+            "description": "A travaillé en tant que développeur logiciel freelance en parallèle de mes études.<ul><li>Intervenu en tant que développeur frontend principal sur deux applications web en production utilisant Angular</li><li>Créé et présenté les projets à la Direction Générale</li></ul>"
+          },
+          {
+            "jobTitle": "Stage de découverte en IA",
+            "company": "Microsoft",
+            "companyLogo": "fa-brands fa-microsoft",
+            "date": "Février - Mars 2019",
+            "description": "Complétion de la formation edX DAT263x (Introduction to AI) & utilisation du Cloud Azure afin découvrir différents outils d'IA"
+          }
+      ],
+  "education": 
+    [
+      {
+        "title": "Data Science & Ingénierie",
+        "school": "EURECOM",
+        "years": "2019 - 2021",
+        "description": "Machine Learning, Deep Learning, Développement logiciels, mathématiques."
+      },
+      {
+        "title": "Master en Ingénierie",
+        "school": "IMT Atlantique",
+        "years": "2018 - 2021",
+        "description": "Probabilités / statistiques, théorie des graphes, POO, Java, SQL, programmation, physique."
+      },
+      {
+        "title": "CPGE (Classes préparatoires aux grandes écoles)",
+        "school": "Lycee Marcelin Berthelot",
+        "years": "2014 - 2018",
+        "description": "Mathématiques, physique, informatique."
+      }
+    ],
+    "RIGHTS": "Tous droits réservés."
+    
+    
+  }
